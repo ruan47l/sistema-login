@@ -1,0 +1,128 @@
+.containerLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: monospace;
+    background-color: #fff;
+    width: 95%;
+    height: 20em;
+    border-radius: 0.8em;
+
+    & h3{
+        font-size: 2.3em;
+        margin-bottom: 0.8em;
+
+        &:hover::after{
+            content: '';
+            display: block;
+            width: 5em;
+            height: 3px;
+            background: #0b6cad;
+            margin: 0 auto;
+            transition: all 0.5s;
+        }
+
+        &::after{
+            content: '';
+            transition: all 0.5s;
+        }
+    }
+    & form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & .inputFirst{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.7em;
+
+            & input{
+                border: 2px solid #e8e8e8;
+                padding: 7px;
+                border-radius: 10px;
+                background-color: #1d90dd81;
+                font-weight: bold;
+                margin-right: 0.8em;
+
+                &:focus{
+                    outline-color: white;
+                    background-color: #1d90dd81;
+                    color: #e8e8e8;
+                    box-shadow: 5px 5px #888888;
+                }
+            }
+            & .user{
+                font-size: 1.8em;
+                color: #215cf1b9;
+            }
+        }
+        & .inputSecond{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1em;
+
+            & input{
+                border: 2px solid #e8e8e8;
+                padding: 7px;
+                border-radius: 10px;
+                background-color: #1d90dd81;
+                font-weight: bold;
+                margin-right: 0.8em;
+
+                &:focus{
+                    outline-color: white;
+                    background-color: #1d90dd81;
+                    color: #e8e8e8;
+                    box-shadow: 5px 5px #888888;
+                }
+            }
+            & .lock{
+                font-size: 1.8em;
+                color: #215cf1b9; 
+            }
+        }
+        & button{
+            background-color: #fff;
+            width: 8em;
+            height: 2.5em;
+            border-radius: 0.5em;
+            transition: all 0.5s;
+            cursor: pointer;
+            border: none;
+
+            &:hover{
+                background-color: #7bbce7a3;
+                transition: all 0.5s;
+            }
+            & p{
+                color: #0b6cad;
+                font-size: 1.3em;
+            }
+        }
+        & p{
+            font-size: 1.2em;
+
+            & .registrar{
+                color: #0b6cad;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover{
+                    text-decoration: line-through #555555;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 426px){
+    .containerLogin{
+        width: 30em;
+    }
+}
